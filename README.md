@@ -21,6 +21,26 @@ installed; no game files are included. Start the client with:
 project-reclaimer.exe game-client
 ```
 
+## Linux via Proton (community-tested, unofficial)
+
+The player client is published for Windows; Linux is not an officially supported
+client platform. One community-tested way to try it on Linux is with Steam Play:
+
+1. Install Halo: The Master Chief Collection from Steam, including both **Halo 3
+   Campaign** and **Halo 3 Multiplayer**. Wait for Steam to finish installing them.
+2. Add the Project Reclaimer client executable from the latest release to Steam
+   as a **Non-Steam Game**.
+3. In that shortcut's **Properties → Compatibility**, enable **Force the use of
+   a specific Steam Play compatibility tool** and select **Proton Experimental**.
+4. Keep Steam running and start Project Reclaimer from the shortcut. If the
+   client asks for the MCC folder, choose the installed
+   `Halo The Master Chief Collection` directory in the file picker; Proton
+   exposes Linux files through its `Z:` drive.
+
+This is an experimental community workaround, not an official Linux support
+commitment; behavior may vary with Proton versions and Linux systems. Linux
+dedicated-server support through Docker is a separate, documented setup.
+
 ## Dedicated servers
 
 Each release also publishes the server image
