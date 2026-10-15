@@ -6,24 +6,33 @@ holds only the releases; the source code isn't published.
 
 ## Download
 
-Get `project-reclaimer.exe` from the
-[latest release](https://github.com/ProjectReclaimer/project-reclaimer-releases/releases/latest)
-and check it against that release's `SHA256SUMS.txt` before running it:
+To play, get the **game client** from the
+[latest release](https://github.com/ProjectReclaimer/project-reclaimer-releases/releases/latest).
+Future releases name it `project-reclaimer-client-v<version>.exe`, with the
+release's version in the filename. The `project-reclaimer-dedicated-...exe`
+download runs servers only; it cannot start the game.
+
+Older releases name the game client `project-reclaimer-v<version>.exe` or
+`project-reclaimer.exe`.
+
+Check your download against that release's `SHA256SUMS.txt` before running it.
+In PowerShell, replace the example below with your downloaded file's exact name:
 
 ```powershell
-Get-FileHash project-reclaimer.exe -Algorithm SHA256
+Get-FileHash '.\project-reclaimer-client-v<version>.exe' -Algorithm SHA256
 ```
 
 You need your own Steam copy of Halo: The Master Chief Collection with Halo 3
-installed; no game files are included. Start the client with:
+Campaign and Multiplayer installed; no game files are included. Double-click
+the client executable to start the game.
 
-```powershell
-project-reclaimer.exe game-client
-```
+When updating from an older client that cannot install the renamed download
+from its menu, open the release page and download the client executable.
 
 ## Dedicated servers
 
-Each release also publishes the server image
+For Windows servers, download `project-reclaimer-dedicated-v<version>.exe`.
+Each release also publishes the Linux server image
 `ghcr.io/projectreclaimer/project-reclaimer-dedicated`. See
 [hosting a dedicated server](https://projectreclaimer.dev/host).
 
