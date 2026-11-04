@@ -36,6 +36,15 @@ Each release also publishes the Linux server image
 `ghcr.io/projectreclaimer/project-reclaimer-dedicated`. See
 [hosting a dedicated server](https://projectreclaimer.dev/host).
 
+## Community and custom game modes
+
+The [game-mode guide](https://projectreclaimer.dev/modes) explains how to write
+JSON or Megalo modes and check them with the game client's `mode-check` command.
+A valid file still needs a playtest with another player before it is shared.
+
+For project questions and bug reports, use the Discord linked from the
+[official website](https://projectreclaimer.dev/).
+
 ## About
 
 More at [projectreclaimer.dev](https://projectreclaimer.dev).
